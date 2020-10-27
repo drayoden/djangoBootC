@@ -9,7 +9,7 @@ For this tut, project=bootc, app=products, app=profiles
 * start an app (use one)
   * `django-admin startapp <name> .` -- note ending period (current folder)
   * `python mananage.py startapp <name>` -- no ending period
-* app.models - create db schema
+* app.models.py - create db schema
 * project.settings.py - register apps in  INSTALLED_APPS
 * project.settings.py - remove SECRET_KEY (make an empty string)
 * `manage.py makemigrations` -- creates empty db and scripts that will be applied with 'migrate' command (next)
@@ -27,13 +27,17 @@ For this tut, project=bootc, app=products, app=profiles
   * `<model class>.objects.create(<property>=data,[],[],...)` -- data could be text '', number, object, etc. -- inserts data into db.
   * `<model class>.objects.get(id=#)` -- get pointer/handle to object from db
   * `obj = <model class>.objects.get(id=#)` -- assign poiner/handle to object
+  * `qs = <model class>.objects.all()` -- get all of the objects from the db 
   * `obj.<property=data,[],[],...>` -- update this property in object
   * `obj.save()` -- duh
   * `obj.delete()` -- duh
 ---
   * DAY2
 ---
-
+  * create a view in `app.views.py` (function or class)
+  * register the new view in `project.urls.py` -- urlpatterns[] 
+  * note JsonResponse for api type of response.
+   
 
 
 
