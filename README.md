@@ -30,7 +30,9 @@ For this tut, project=bootc, app=products, app=profiles
   * `obj.<property=data,[],[],...>` -- update this property in object
   * `obj.save()` -- duh
   * `obj.delete()` -- duh
-
+---
+  * DAY2
+---
 
 
 
