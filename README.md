@@ -2,6 +2,8 @@ django bootcamp tut from CodingEnterpreneurs 10/05/20 -- brushup on django stuff
 ---
 For this tut, project=bootc, app=products, app=profiles
 ---
+  * DAY1
+---
 * `pip install django==3.1.2`
 * `django-admin` -- list of commands
 * start an app (use one)
