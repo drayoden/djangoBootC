@@ -6,9 +6,11 @@ For this tut, project=bootc, app=products, app=profiles
 ---
 * `pip install django==3.1.2`
 * `django-admin` -- list of commands
+* start a project:
+  * `django-admin startproject <name> .` -- note ending period (current folder)
+  * project.settings.py - change SECRET_KEY before commit
 * start an app (use one)
   * `django-admin startapp <name> .` -- note ending period (current folder)
-  * settings.py - change SECRET_KEY before commit
   * `python mananage.py startapp <name>` -- no ending period
 * app.models.py - create db schema
 * project.settings.py - register apps in  INSTALLED_APPS
