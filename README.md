@@ -34,13 +34,13 @@ For this tut, project=bootc, app=products, app=profiles, app=emails
   * `obj.save()` -- duh
   * `obj.delete()` -- duh
 ---
-  * DAY2
+  #### DAY2
 ---
   * create a view in `app.views.py` (function or class)
   * register the new view in `project.urls.py` -- urlpatterns[] 
   * note JsonResponse for api type of response.
 ---
-  * DAY3
+  #### DAY3
 ---   
   * settings.py/ROOT_URLCONF='<project name>.urls' -- sets root of project with the root urls file, kind of like var/www/index.html.
   * templates: djangobootc/templates folder -- templates/home.html -- contains the home page content
@@ -54,7 +54,7 @@ For this tut, project=bootc, app=products, app=profiles, app=emails
     * urls.py -- create new path for the list of products.
   * dynamic titles -- very cool -- see 40:40
 ---
-  * DAY4
+  #### DAY4
 ---   
 
 
