@@ -25,6 +25,7 @@ SECRET_KEY = 'boguskeyChangemeforproduction'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = []
 
 
@@ -56,7 +57,11 @@ ROOT_URLCONF = 'bootc.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        
+        # pick one below for DIRS:
+        'DIRS': [BASE_DIR/'templates'],  # do not need to import anything...
+        #'DIRS': os.path.join(BASE_DIR, 'templates'),  # need to 'import os'
+        
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,3 +125,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# hex50 status messages for development
+from operator import itemgetter 
+if DEBUG:
+    print(f'BASE_DIR: {BASE_DIR}')
+    print(f'SECRET_KEY: {SECRET_KEY}')
+    print(f'TEMPLATES: {TEMPLATES}')
+    print(f'Path(__file__): {Path(__file__)}')
+    
+
+

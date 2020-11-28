@@ -1,0 +1,17 @@
+{%extends "base.html" %}
+
+
+{% block content %}
+
+<h3>{{object.title}}</h3>
+
+{% if object.content %}
+    <p>{{object.content}} (${{object.price}})</p>
+{% else %}
+    <p>Title info coming soon</p>
+{% endif %}
+
+<p>{{request}}</p>  <!-- request is part of the settings.py[TEMPLATES] list: django.template.context_processors.request -->
+<p>{{request.path}}</p>
+
+{% endblock %}

@@ -1,6 +1,6 @@
 django bootcamp tut from CodingEnterpreneurs 10/05/20 -- brushup on django stuff
 ---
-For this tut, project=bootc, app=products, app=profiles
+For this tut, project=bootc, app=products, app=profiles, app=emails
 ---
   * DAY1
 ---
@@ -23,7 +23,7 @@ For this tut, project=bootc, app=products, app=profiles
 * run dev server: `manaage.py runserver`
 * using the shell:
   * `manage.py shell` -- starts the django shell... `exit()` to close shell
-  * `from app.models import <model class>`
+  * `from <appname>.models import <model class>`
   * `<model class>.objects.create(<property>=data,[],[],...)` -- data could be text '', number, object, etc. -- inserts data into db.
   * `<model class>.objects.get(id=#)` -- get pointer/handle to object from db
   * `obj = <model class>.objects.get(id=#)` -- assign poiner/handle to object
@@ -37,7 +37,24 @@ For this tut, project=bootc, app=products, app=profiles
   * create a view in `app.views.py` (function or class)
   * register the new view in `project.urls.py` -- urlpatterns[] 
   * note JsonResponse for api type of response.
-   
+---
+  * DAY3
+---   
+  * settings.py/ROOT_URLCONF='<project name>.urls' -- sets root of project with the root urls file, kind of like var/www/index.html.
+  * templates: djangobootc/templates folder -- templates/home.html -- contains the home page content
+  * templates/base.html -- contains doctype, html/head/body start/end tags -- all other html files 'extend' this file.
+  * app templates can be in one of two places
+    * products/templates/products/detail.html -- contains specific content for products (see views.py -- product_detail_view - "products/templates/products/deatil.html -- wtf!
+    * templates/products/detail.html -- I like this better, it searches here first anyway and seems more intuative
+  * see 33:00 for snippet example
+  * templates/products/list.html -- renders list of all products - uses for loop in template -- good for cards, porfolios, etc...
+    * products/views.py -- product_list_view -- queries the db -> qs (query set) -- the context is creted useing the qs
+    * urls.py -- create new path for the list of products.
+  * dynamic titles -- very cool -- see 40:40
+
+
+
+
 
 
 

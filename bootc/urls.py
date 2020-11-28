@@ -23,5 +23,6 @@ urlpatterns = [
     # path('products/1', views.product_detail_view),
     # path('products/<int:id>', views.product_detail_view),  # takes a argument of type int.
     path('products/<int:pk>', views.product_detail_view),  # same as above, takes 'pk - primary key' 
+    path('products/', views.product_list_view), # displays all products in one page
     path('api/products/<int:id>', views.product_api_detail_view),
 ]
