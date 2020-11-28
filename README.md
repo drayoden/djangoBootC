@@ -2,7 +2,7 @@ django bootcamp tut from CodingEnterpreneurs 10/05/20 -- brushup on django stuff
 ---
 For this tut, project=bootc, app=products, app=profiles, app=emails
 ---
-  * DAY1
+  #### DAY1
 ---
 * `pip install django==3.1.2`
 * `django-admin` -- list of commands
@@ -51,6 +51,9 @@ For this tut, project=bootc, app=products, app=profiles, app=emails
     * products/views.py -- product_list_view -- queries the db -> qs (query set) -- the context is creted useing the qs
     * urls.py -- create new path for the list of products.
   * dynamic titles -- very cool -- see 40:40
+---
+  * DAY3
+---   
 
 
 
