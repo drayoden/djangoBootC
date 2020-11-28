@@ -6,12 +6,14 @@ For this tut, project=bootc, app=products, app=profiles, app=emails
 ---
 * `pip install django==3.1.2`
 * `django-admin` -- list of commands
+* start a project:
+  * `django-admin startproject <name> .` -- note ending period (current folder)
+  * project.settings.py - change SECRET_KEY before commit
 * start an app (use one)
   * `django-admin startapp <name> .` -- note ending period (current folder)
   * `python mananage.py startapp <name>` -- no ending period
 * app.models.py - create db schema
 * project.settings.py - register apps in  INSTALLED_APPS
-* project.settings.py - remove SECRET_KEY (make an empty string)
 * `manage.py makemigrations` -- creates empty db and scripts that will be applied with 'migrate' command (next)
 * `manage.py migrate` -- updates/writes/applies changes to db using scripts created above and on first run creates default tables for admin console, etc.
 * NOTE: to reinitialize the db if everything goes south:
