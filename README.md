@@ -54,7 +54,7 @@ For this tut, project=bootc, app=products, app=profiles, app=emails
     * urls.py -- create new path for the list of products.
   * dynamic titles -- very cool -- see 40:40
 ---
-  * DAY3
+  * DAY4
 ---   
 
 
